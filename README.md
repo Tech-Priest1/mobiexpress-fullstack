@@ -81,6 +81,6 @@ EXPO_PUBLIC_API_URL=https://seu-subdominio.loca.lt
 
 Projeto criado por [Petrus Ermerson], para a MobiExpress 📱
 
-- Para mais instruções viste as paginas do [backend]([https://github.com/Tech-Priest1/samaraBackend.git]) e [frontend]([https://github.com/Tech-Priest1/react-nativeApp.git])
+- Para mais instruções viste as paginas do [backend](https://github.com/Tech-Priest1/samaraBackend.git) e [frontend](https://github.com/Tech-Priest1/react-nativeApp.git)
 
 
