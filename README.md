@@ -81,5 +81,6 @@ EXPO_PUBLIC_API_URL=https://seu-subdominio.loca.lt
 
 Projeto criado por [Petrus Ermerson], para a MobiExpress 📱
 ```
-```
 - Para mais instruções viste as paginas do backend and frontend
+```
+
