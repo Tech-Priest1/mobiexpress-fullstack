@@ -42,44 +42,6 @@ Esse comando:
 
 As mensagens são armazenadas localmente usando `AsyncStorage`, associadas ao `userId` do usuário.
 
-### ✅ Manter histórico após logout
-
-Para manter o histórico mesmo após o logout:
-
-1. **Salve o `lastUserId` no login:**
-
-```js
-await AsyncStorage.setItem('userId', userId);
-await AsyncStorage.setItem('lastUserId', userId); // novo
-```
-
-2. **Altere o carregamento no `ChatScreen`:**
-
-```js
-const loadMessages = async () => {
-  const userId = await AsyncStorage.getItem('userId') 
-                  || await AsyncStorage.getItem('lastUserId');
-  if (!userId) return;
-  const saved = await AsyncStorage.getItem(`chatMessages_${userId}`);
-  if (saved) setMessages(JSON.parse(saved));
-};
-```
-
-### ❌ Limpar histórico no logout
-
-Para apagar o histórico ao deslogar:
-
-```js
-const userId = await AsyncStorage.getItem('userId');
-if (userId) {
-  await AsyncStorage.removeItem(`chatMessages_${userId}`);
-}
-await AsyncStorage.removeItem('userId');
-await AsyncStorage.removeItem('lastUserId');
-```
-
----
-
 ## 📱 Frontend
 
 No diretório `frontend/`, use:
