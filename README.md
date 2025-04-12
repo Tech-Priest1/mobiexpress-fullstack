@@ -1,4 +1,4 @@
-Claro! Aqui está um `README.md` em formato pronto para GitHub com todas as instruções:
+
 
 ---
 
